@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   lastChecked: string;
-
+  timesVisited: number = 15;
   title = 'covid';
 
   public updateLastChecked(check) {
     this.lastChecked = check
   }
-
 }

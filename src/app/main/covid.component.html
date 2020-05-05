@@ -11,9 +11,9 @@
         <mat-label>Search Country</mat-label>
         <input matInput placeholder="Ex. India" formControlName="countryName">
       </mat-form-field>
-      <span *ngIf="countrySearch.get('countryName').errors && countrySearch.get('countryName').touched"
-        class="text-danger">Country name is required</span>
-
+      <!-- <span *ngIf="countrySearch.get('countryName').errors && countrySearch.get('countryName').touched"
+        class="text-danger">Country name is required</span> -->
+      <button type="submit" mat-button color="primary">Submit</button>
     </form>
     <mat-card>
       Total cases:<span class="text text-primary lead"> {{ total }}</span> <br>

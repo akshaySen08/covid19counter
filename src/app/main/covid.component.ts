@@ -58,7 +58,8 @@ export class CovidComponent implements OnInit {
         this.covidData = res['data'].covid19Stats;
         this.lastCheckedDate = res['data'].lastChecked.split('T')[0];
         this.lastCheckedTime = res['data'].lastChecked.split('T')[1].split('.')[0];
-        // console.log(res['data']);
+
+        this.total = 0; this.totalDeaths = 0; this.totalRecovered = 0;
 
         res['data'].covid19Stats.map((cities) => {
           this.total += cities.confirmed;
