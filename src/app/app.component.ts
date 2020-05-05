@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  lastChecked: string;
+
   title = 'covid';
+
+  public updateLastChecked(check) {
+    this.lastChecked = check
+  }
+
 }
